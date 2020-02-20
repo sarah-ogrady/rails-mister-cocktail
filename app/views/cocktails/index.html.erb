@@ -1,7 +1,15 @@
-<h2>Cocktails</h2>
-<%= link_to 'Add new cocktail', new_cocktail_path, class: 'add btn btn-success' %>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail.id), class: 'link' %></li>
-  <% end %>
-</ul>
+<div class="cocktail-banner">
+  <div class="title">
+    <h2 class="title-text">Cocktail Ninjas</h2>
+    <%= link_to 'Add new cocktail', new_cocktail_path, class: 'add btn btn-success' %>
+  </div>
+</div>
+<div class="cocktail-grid">
+    <% @cocktails.each do |cocktail| %>
+    <div class="d-flex align-items-center justify-content-center w-100 m-3">
+      <div class="cocktail-card d-flex align-items-center justify-content-center">
+        <li><%= link_to cocktail.name, cocktail_path(cocktail.id), class: 'cocktail-link' %></li>
+      </div>
+    </div>
+    <% end %>
+</div>

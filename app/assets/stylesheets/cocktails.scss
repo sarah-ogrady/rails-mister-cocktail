@@ -1,3 +1,67 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.cocktail-banner {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.4)), url('https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/57/2019/03/28150346/NAA_7399-1500x690.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position:relative
+}
+
+.title {
+  position: absolute;
+  justify-content: center;
+  left: 200px;
+  top: 150px;
+}
+
+.title-text {
+  font-size: 100px;
+  font-family: 'Lacquer', sans-serif;
+}
+
+.add {
+  height: 50px;
+  font-family: 'Lacquer', sans-serif;
+  background-color: pink;
+  border: none;
+  font-size: 24px;
+  &:hover {
+    background-color: #FF1493;
+  }
+}
+
+.cocktail-grid {
+  width: 80wv;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.cocktail-card {
+  height: 400px;
+  width: 300px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://cdn2.rsc.org.uk/sitefinity/images/catering/social-images/cocktails-in-the-rooftop-restaurant-bar.tmb-gal-1340.jpg?sfvrsn=1dea0321_1');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);;
+}
+
+.cocktail-link {
+  text-decoration: none;
+  color:lightgrey;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
