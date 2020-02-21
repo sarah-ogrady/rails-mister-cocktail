@@ -29,8 +29,9 @@
   background-color: pink;
   border: none;
   font-size: 24px;
-  &:hover {
+  &:hover, &:active, &:focus{
     background-color: #FF1493;
+    border: none;
   }
 }
 
@@ -40,6 +41,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  background: url('https://previews.123rf.com/images/1stchoice/1stchoice1606/1stchoice160600041/58901944-soft-pink-background-with-abstract-vintage-texture.jpg') no-repeat center center fixed;
 }
 .cocktail-card {
   height: 400px;
@@ -54,6 +56,8 @@
 .cocktail-link {
   text-decoration: none;
   color:lightgrey;
+  font-size: 25px;
+  font-family: 'Lacquer', sans-serif;
 
   &:hover {
     text-decoration: none;
