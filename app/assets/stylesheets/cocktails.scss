@@ -36,12 +36,12 @@
 }
 
 .cocktail-grid {
-  width: 80wv;
-  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
   background: url('https://previews.123rf.com/images/1stchoice/1stchoice1606/1stchoice160600041/58901944-soft-pink-background-with-abstract-vintage-texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
 }
 .cocktail-card {
   height: 400px;
@@ -68,4 +68,23 @@
 li {
   list-style-type: none;
   text-align: center;
+}
+
+.show-container {
+  background: url('https://previews.123rf.com/images/1stchoice/1stchoice1606/1stchoice160600041/58901944-soft-pink-background-with-abstract-vintage-texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding:100px;
+  height: 500px;
+  font-family: 'Lacquer', sans-serif;
+
+}
+
+.show-page-name {
+  font-family: 'Lacquer', sans-serif;
+}
+
+.show-image {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
 }
