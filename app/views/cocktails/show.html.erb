@@ -1,12 +1,14 @@
-<div class="show-container">
+<div class="show-page">
   <h2 class="show-page-name"><%= @cocktail.name %></h2>
   <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill, class: "show-image"  %>
   <% @cocktail.doses.each do |dose| %>
     <%= dose.description %>
     <%= dose.ingredient.name %>
   <% end %>
-  <%= link_to "Back to cocktails", cocktails_path %>
-  <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+  <div class="links">
+    <%= link_to "Back to cocktails", cocktails_path, class: "link-back" %>
+    <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "link-back" %>
+  </div>
 </div>
 
 

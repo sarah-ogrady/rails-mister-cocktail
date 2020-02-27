@@ -1,0 +1,38 @@
+
+.show-page {
+  background: url('stars.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding:100px;
+  height: 500px;
+  font-family: 'Lacquer', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 800px;
+}
+
+.show-page-name {
+  font-family: 'Lacquer', sans-serif;
+}
+
+.show-image {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.links {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-back {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: lightgrey;
+  }
+}

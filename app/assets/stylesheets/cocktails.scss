@@ -46,7 +46,6 @@
 .cocktail-card {
   height: 400px;
   width: 300px;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://cdn2.rsc.org.uk/sitefinity/images/catering/social-images/cocktails-in-the-rooftop-restaurant-bar.tmb-gal-1340.jpg?sfvrsn=1dea0321_1');
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -70,21 +69,17 @@ li {
   text-align: center;
 }
 
-.show-container {
-  background: url('https://previews.123rf.com/images/1stchoice/1stchoice1606/1stchoice160600041/58901944-soft-pink-background-with-abstract-vintage-texture.jpg') no-repeat center center fixed;
-  background-size: cover;
-  padding:100px;
-  height: 500px;
-  font-family: 'Lacquer', sans-serif;
-
+.footer-homepage {
+  text-align: center;
+  background-color: black;
+  color: white;
 }
 
-.show-page-name {
+.footer-homepage > h3 {
   font-family: 'Lacquer', sans-serif;
 }
 
-.show-image {
-  border-radius: 8px;
-  height: 300px;
-  width: 300px;
+.social-link {
+  padding: 5px;
+  font-size: 20px
 }
