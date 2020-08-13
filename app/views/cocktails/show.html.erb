@@ -8,6 +8,7 @@
   <div class="links">
     <%= link_to "Back to cocktails", cocktails_path, class: "link-back" %>
     <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "link-back" %>
+    <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "link-back" %>
   </div>
 </div>
 
